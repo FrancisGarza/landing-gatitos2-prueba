@@ -1,121 +1,122 @@
-
 /*alalalalalallalla metas celu*/
- @media (min-width: 320px) {
-     .grid-container {
-         display: grid;
-         grid-template-areas:
-             'menu-nav'
-             'search'
-             'main'
-             'footer';
-     }
+@media (min-width: 320px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'menu-nav'
+            'search'
+            'main'
+            'footer';
 
-     .menu-nav {
-         grid-area: menu-nav;
-     }
-
-     .search {
-        padding: 10px;
-         height: 10vh;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         flex-direction: column;
-         grid-area: search;
-     }
-
-     .main {
-         height: 95vh;
-         grid-template-columns: auto;
-         display: grid;
-         grid-gap: 25px;
-         overflow: hidden;
-         padding-top: 25px;
-         align-items: center;
-         justify-content: center;
-         flex-direction: column;
-         height: 100%;
-         width: 97vw;
-         grid-area: main;
-         background-color: #732dff;
-     }
-     .card {
-         background-color: #ffffff;
-         align-items: center;
-         text-align-last: center;
-         vertical-align: middle;
-     }
     }
+
+    .menu-nav {
+        grid-area: menu-nav;
+    }
+
+    .search {
+        padding: 10px;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        grid-area: search;
+    }
+
+    .main {
+        height: 95vh;
+        grid-template-columns: auto;
+        display: grid;
+        grid-gap: 25px;
+        overflow: hidden;
+        padding-top: 25px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 97vw;
+        grid-area: main;
+        background-color: #732dff;
+    }
+
+    .card {
+        background-color: #ffffff;
+        align-items: center;
+        text-align-last: center;
+        vertical-align: middle;
+    }
+
+
     .pagination {
-       position: relative;
-       left: 10%;
-   }
-     .footer {
-         grid-area: footer;
-     }
+        position: relative;
+        left: 10%;
+    }
 
+    .footer {
+        grid-area: footer;
+    }
+}
 
- @media (min-width: 576px) {
-     .grid-container {
-         display: grid;
-         grid-template-areas:
-             'menu-nav search search'
-             'menu-nav main main'
-             'footer footer footer';
-     }
+@media (min-width: 576px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'menu-nav search search'
+            'menu-nav main main'
+            'footer footer footer';
+    }
 
-     .menu-nav {
+    .menu-nav {
         height: 159vh;
-         grid-area: menu-nav;
-         background-color: #ff8b2d;
-     }
+        grid-area: menu-nav;
+        background-color: #ff8b2d;
+    }
 
-     .container-fluid {
+    .container-fluid {
 
-         flex-direction: column !important;
-     }
+        flex-direction: column !important;
+    }
 
-     .navbar-nav {
-         flex-direction: column !important;
-     }
+    .navbar-nav {
+        flex-direction: column !important;
+    }
 
-     .search {
-         padding: 10px;
-         display: flex;
-         text-align-last: center;
-         height: 10vh;
-         grid-area: search;
-         background-color: #f4ff2d;
-     }
+    .search {
+        padding: 10px;
+        display: flex;
+        text-align-last: center;
+        height: 10vh;
+        grid-area: search;
+        background-color: #f4ff2d;
+    }
 
-     .main {
-         display: grid;
-         grid-template-columns: auto auto auto auto;
-         grid-gap: 25px;
-         background-color: #2196F3;
-         overflow: hidden;
-         margin: 10px;
-         padding: 10px;
-         height: 140vh;
-         width: 89vw;
-         grid-area: main;
-         background-color: #2dff81;
-     }
+    .main {
+        display: grid !important;
+        grid-template-columns: auto auto auto auto!important;;
+        background-color: #2196F3;
+        grid-area: main;
+        background-color: #2dff81;
+        padding: 10px;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
 
-     .card {
-         background-color: #ffffff;
-         align-items: center;
-         text-align-last: center;
-         vertical-align: middle;
-     }
+    .card {
+        background-color: #ffffff;
+        align-items: center;
+        text-align-last: center;
+        vertical-align: middle;
+    }
 
-     .pagination {
-         position: absolute;
-         bottom: -60%;
-         left: 50%;
-     }
+    .pagination {
+        position: absolute;
+        bottom: -60%;
+        left: 50%;
+    }
 
-     .footer {
-         grid-area: footer;
-     }
- }
+    .footer {
+        grid-area: footer;
+    }
+}
